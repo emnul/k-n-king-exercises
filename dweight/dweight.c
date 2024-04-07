@@ -1,6 +1,7 @@
 /* Computes the dimensional weight of a 12" x 10" x 8" */
 
 #include <stdio.h>
+#define INCHES_PER_POUND 166 // define new macro:
 
 int main(void) {
    // declare vars
@@ -17,8 +18,8 @@ int main(void) {
 
    // given user input, perform calculations
    volume = length * width * height;
-   int dimensional_weight =
-         (volume + 165) / 166; // rounds up to the next integer
+   // rounds up to the next integer
+   int dimensional_weight = (volume + INCHES_PER_POUND - 1) / INCHES_PER_POUND;
 
    printf("Dimension: %dx%dx%d\n", length, width, height);
    printf("Volume (cubic inches): %d\n",
