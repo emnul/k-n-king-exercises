@@ -11,7 +11,9 @@ int main(void) {
          (volume + 165) / 166; // rounds up to the next integer
 
    printf("Dimension: %dx%dx%d\n", length, width, height);
-   printf("Volume (cubic inches): %d\n", volume);
+   printf("Volume (cubic inches): %d\n",
+          length * width *
+                height); // can use an expression where a value is needed
    printf("Dimensional weight (pounds): %d\n", dimensional_weight);
 
    return 0;
