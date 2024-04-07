@@ -3,10 +3,20 @@
 #include <stdio.h>
 
 int main(void) {
-   int length = 12;
-   int width = 10;
-   int height = 8;
-   int volume = length * width * height;
+   // declare vars
+   int length, width, height, volume;
+
+   // get user input
+   printf("Enter height of the box: ");
+   // when user hits enter key, cursor automatically moves to next line; new line char isnt needed to terminate current line
+   scanf("%d", &height);
+   printf("Enter width of the box: ");
+   scanf("%d", &width);
+   printf("Enter length of the box: ");
+   scanf("%d", &length);
+
+   // given user input, perform calculations
+   volume = length * width * height;
    int dimensional_weight =
          (volume + 165) / 166; // rounds up to the next integer
 
