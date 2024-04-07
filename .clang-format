@@ -1,3 +1,7 @@
 IndentWidth: 3
 ContinuationIndentWidth: 6
 ReflowComments: false
+# Should be declared this way:
+BreakBeforeBraces: Custom
+BraceWrapping:
+    AfterFunction: true

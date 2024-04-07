@@ -3,7 +3,8 @@
 #include <stdio.h>
 #define INCHES_PER_POUND 166 // define new macro:
 
-int main(void) {
+int main(void)
+{
    // declare vars
    int length, width, height, volume;
 
