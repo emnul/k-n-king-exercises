@@ -1,3 +1,5 @@
+// Let's observe what happens when we declare vars but
+// don't initialize them!
 #include "stdio.h"
 
 int main(void)
